@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "mysuperproject",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authmysuperproject7d121551",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

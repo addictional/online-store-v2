@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* { -webkit-tap-highlight-color: transparent; }
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+
+@font-face{
+  font-family: 'Montserrat Bold';
+  src: url("/fonts/Montserrat-Bold.ttf")
+}
+
+@font-face{
+  font-family: 'Comfortaa';
+  src: url("/fonts/Comfortaa.ttf")
+}
+
+@font-face{
+  font-family: 'Circle';
+  src: url("/fonts/Circle.ttf")
+}
+
+@font-face{
+  font-family: 'Montserrat Regular';
+  src: url("/fonts/Montserrat-Regular.ttf")
+}
+
+@font-face{
+  font-family: 'Montserrat ExtraBold';
+  src: url("/fonts/Montserrat-ExtraBold.ttf")
+}

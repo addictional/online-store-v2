@@ -1,0 +1,20 @@
+type Product @model 
+  @auth(rules: [{allow: owner,queries: null}])
+{
+  id: ID!
+  brand: String!
+  name: String!
+  params: String
+  price: Int!
+  discount: Int!
+  section: Section @connection(name: "SectionProducts")
+}
+
+type Section @model
+  @auth(rules: [{allow: owner,queries: null}])
+{
+  id: ID!
+  name: String!
+  path: String!
+  products: [Product] @connection(name: "SectionProducts")
+}
